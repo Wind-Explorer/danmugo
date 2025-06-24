@@ -12,14 +12,25 @@
   "app": {
     "windows": [
       {
+        "label": "main",
         "title": "danmugo",
+        "alwaysOnTop": true,
+        "transparent": true,
+        "decorations": false,
+        "skipTaskbar": true,
+        "maximized": true,
+        "visibleOnAllWorkspaces": true,
+        "closable": false,
+        "minimizable": false,
+        "resizable": false,
         "width": 800,
         "height": 600
       }
     ],
     "security": {
       "csp": null
-    }
+    },
+    "macOSPrivateApi": true
   },
   "bundle": {
     "active": true,
