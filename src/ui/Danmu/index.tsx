@@ -81,7 +81,6 @@ export default function Danmu() {
       if (!running.current) return;
       if (now - lastFrame >= FRAME_DURATION) {
         setComments((prev) => {
-          const containerWidth = containerRef.current?.clientWidth || 800;
           return prev
             .map((c) => {
               // Move left
@@ -122,7 +121,7 @@ export default function Danmu() {
   }, [comments]);
 
   return (
-    <div className="relative size-full overflow-hidden">
+    <div className="relative w-screen h-screen overflow-hidden">
       <div ref={containerRef} className="absolute inset-0 pointer-events-none">
         {comments.map((comment) => (
           <div
@@ -133,7 +132,6 @@ export default function Danmu() {
               transform: `translateX(${comment.x}px)`,
               top: comment.top,
               willChange: "transform",
-              transition: "none",
               pointerEvents: "none",
             }}
           >

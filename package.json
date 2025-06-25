@@ -15,6 +15,7 @@
     "@tauri-apps/plugin-opener": "^2",
     "framer-motion": "^12.19.1",
     "preact": "^10.25.1",
+    "react-router": "^7.6.2",
     "tailwindcss": "^4.1.10"
   },
   "devDependencies": {
