@@ -23,6 +23,7 @@
         "closable": false,
         "minimizable": false,
         "resizable": false,
+        "shadow": false,
         "width": 800,
         "height": 600
       }

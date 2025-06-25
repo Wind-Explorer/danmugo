@@ -1,7 +1,9 @@
+import Danmu from "./ui/Danmu";
+
 function App() {
   return (
-    <main class="container">
-      <p>App</p>
+    <main class="w-screen h-screen">
+      <Danmu />
     </main>
   );
 }
