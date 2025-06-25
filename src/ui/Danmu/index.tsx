@@ -128,14 +128,10 @@ export default function Danmu() {
           <div
             key={comment.id}
             id={`danmu-${comment.id}`}
-            className="absolute whitespace-nowrap font-bold select-none danmu-font"
+            className="absolute whitespace-nowrap text-2xl font-bold select-none danmu-font bg-gradient-to-b from-black to-white bg-clip-text text-neutral-500/10"
             style={{
               transform: `translateX(${comment.x}px)`,
               top: comment.top,
-              color: comment.color,
-              fontSize: comment.fontSize,
-              textShadow:
-                "2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(0,0,0,0.5)",
               willChange: "transform",
               transition: "none",
               pointerEvents: "none",
