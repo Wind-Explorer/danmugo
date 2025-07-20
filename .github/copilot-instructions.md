@@ -1,0 +1,1 @@
+Before making changes to the code, look through the existing codebase to understand architecture, structure and code style for consistency so you can integrate better and generate less duplicate / problematic code.
