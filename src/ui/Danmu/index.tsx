@@ -113,8 +113,8 @@ export default function Danmu() {
       if (el && el.offsetWidth !== comment.width) {
         setComments((prev) =>
           prev.map((c) =>
-            c.id === comment.id ? { ...c, width: el.offsetWidth } : c
-          )
+            c.id === comment.id ? { ...c, width: el.offsetWidth } : c,
+          ),
         );
       }
     });
@@ -127,7 +127,7 @@ export default function Danmu() {
           <div
             key={comment.id}
             id={`danmu-${comment.id}`}
-            className="absolute whitespace-nowrap text-2xl font-bold select-none danmu-font bg-gradient-to-b from-black to-white bg-clip-text text-neutral-500/10"
+            className="absolute whitespace-nowrap text-2xl font-bold select-none danmu-font text-white stroked-text"
             style={{
               transform: `translateX(${comment.x}px)`,
               top: comment.top,
